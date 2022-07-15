@@ -1,0 +1,173 @@
+.chessboardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chessboard {
+  margin: 6rem auto 0px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 576px) {
+  .board {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .board {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+}
+
+.column {
+  flex-grow: 1;
+}
+
+.dark {
+  background-color: rgb(203, 200, 200);
+  border-radius: 50%;
+}
+
+.white {
+  background-color: white;
+  border-radius: 50%;
+}
+
+@keyframes rotate0 {
+  from {
+    transform: rotate(315deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate45 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate90 {
+  from {
+    transform: rotate(45deg);
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate135 {
+  from {
+    transform: rotate(90deg);
+  }
+
+  to {
+    transform: rotate(135deg);
+  }
+
+}
+
+@keyframes rotate180 {
+  from {
+    transform: rotate(135deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+
+}
+
+@keyframes rotate225 {
+  from {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(225deg);
+  }
+
+}
+
+@keyframes rotate270 {
+  from {
+    transform: rotate(225deg);
+  }
+
+  to {
+    transform: rotate(270deg);
+  }
+
+}
+
+@keyframes rotate315 {
+  from {
+    transform: rotate(270deg);
+  }
+
+  to {
+    transform: rotate(315deg);
+  }
+
+}
+
+.rotate0 {
+  animation: rotate0 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.rotate45 {
+  animation: rotate45 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.rotate90 {
+  animation: rotate90 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.rotate135 {
+  animation: rotate135 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.rotate180 {
+  animation: rotate180 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.rotate225 {
+  animation: rotate225 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.rotate270 {
+  animation: rotate270 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.rotate315 {
+  animation: rotate31 1s linear;
+  animation-fill-mode: forwards;
+}

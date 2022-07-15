@@ -1,0 +1,7 @@
+.hasError {
+  border-color: red;
+}
+
+.errorText {
+  color: red;
+}

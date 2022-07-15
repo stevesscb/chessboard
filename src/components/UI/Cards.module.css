@@ -1,0 +1,24 @@
+.cardWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardWrapper div {
+  color: #3d9069;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  min-height: 100px;
+  margin: 10px;
+  line-height: -5%;
+}
+
+.cardWrapper div p strong {
+  line-height: 2;
+}
