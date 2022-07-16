@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import './App.css';
+import Button from 'react-bootstrap/Button';
 
 import Container from 'react-bootstrap/Container';
 import BoardSizeInput from './components/UI/BoardSizeInput';
@@ -33,6 +34,10 @@ function App() {
     setBoard(new Array(size).fill(new Array(size).fill(null)));
   };
 
+  const returnBoard = () => {
+    setShowBoard(false);
+  };
+
   return (
     <Container>
       <h1 className='main-heading pt-3'>THE GRAYSCALE CHESS BOARD</h1>
@@ -41,6 +46,11 @@ function App() {
           <Cards />
           <RotateButton onClick={handleRotateBoard} disable={disableRotation} />
           <Board board={board} rotation={rotation} />
+          <div className='d-flex justify-content-center m-5 p-5'>
+            <Button variant='light' type='submit' onClick={returnBoard}>
+              Return
+            </Button>
+          </div>
         </>
       ) : (
         <BoardSizeInput onSubmit={handleBoardInputSubmit} />
